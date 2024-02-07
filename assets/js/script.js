@@ -124,3 +124,45 @@ function restartQuiz() {
     setCount();
     loadQuestion();
 }
+
+////////////////////////////////////////////////////////////
+
+// UTILITY FUNCTIONS
+// SET A COOKIE VALUE
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = 'expires=' + d.toUTCString();
+    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+}
+
+// USER CHECK - checks if username cookie exists, asks for one if it doesn't
+function userCheck(name) {
+    let val = getCookie(name);
+    if (val != '') {
+        alert('Welcome again ' + user);
+    } else {
+        user = prompt('Please enter your name:', '');
+        if (user != '' && user != null) {
+            setCookie('username', user, 365);
+        }
+    }
+}
+
+// SET CONFIG - Sets session variables for config choices
+function setConfig(category, difficulty, type) {
+    sessionStorage.setItem('category', category);
+    sessionStorage.setItem('difficulty', difficulty);
+    sessionStorage.setItem('type', type);
+}
+
+// GET CONFIG - Returns an object of config choices
+function getConfig() {
+    const config = {
+        category: sessionStorage.getItem('category'),
+        difficulty: sessionStorage.getItem('difficulty'),
+        type: sessionStorage.getItem('type'),
+    };
+
+    return config;
+}
