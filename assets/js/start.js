@@ -1,3 +1,4 @@
+const questionCount = document.getElementById('question-count');
 const triviaCategory = document.getElementById('trivia_category');
 const triviaDifficulty = document.getElementById('trivia_difficulty');
 const triviaType = document.getElementById('trivia_type');
@@ -6,15 +7,15 @@ const playButtonElement = document.getElementById('playButton');
 
 document.getElementById('playButton').addEventListener('click', function (event) {
     event.preventDefault();
-    setConfig(triviaCategory.value, triviaDifficulty.value, triviaType.value);
+    setConfig(questionCount.value, triviaCategory.value, triviaDifficulty.value, triviaType.value);
     window.location.href = 'quiz.html';
 });
 
 userCheck('username');
-////////////////////////////////////////////////////////////
 
-// UTILITY FUNCTIONS
-// SET A COOKIE VALUE
+// UTILITY FUNCTIONS //
+
+// SET A COOKIE
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
@@ -22,7 +23,7 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
 }
 
-// GET COOKIE
+// GET A COOKIE
 function getCookie(cname) {
     let name = cname + '=';
     let decodedCookie = decodeURIComponent(document.cookie);
@@ -53,7 +54,8 @@ function userCheck(name) {
 }
 
 // SET CONFIG - Sets session variables for config choices
-function setConfig(category, difficulty, type) {
+function setConfig(questionCount, category, difficulty, type) {
+    sessionStorage.setItem('questionCount', questionCount);
     sessionStorage.setItem('category', category);
     sessionStorage.setItem('difficulty', difficulty);
     sessionStorage.setItem('type', type);
