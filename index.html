@@ -7,6 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- FAVICONS -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -27,10 +34,13 @@
             <div class="wrapper">
                 <div class="quiz-container">
                     <div class="quiz-head">
+                        <div>
+                            <img class="logo" src="assets/images/logo.jpg" alt="Quizzee Rascals Logo">
+                        </div>
                         <h1 class="quiz-title">Options</h1>
+                        <p class="quiz-title">Please Select Your Options</p>
                     </div>
                     <div>
-                        <p>Please Select Your Options</p>
                         <br>
                         <div>
                             <label for="trivia_category">Category: </label>
@@ -84,7 +94,8 @@
                     </div>
                     <br>
                     <div class="quiz-foot">
-                        <a href="quiz.html">Play Game</a>
+                        <button id="playButton">Play Game!</button>
+                        <!-- <a href="quiz.html">Play Game</a> -->
                     </div>
                 </div>
             </div>
@@ -92,7 +103,7 @@
     </main>
     <footer></footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/start.js"></script>
 </body>
 
 </html>
