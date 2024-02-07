@@ -12,9 +12,12 @@ let correctScore = 0;
 let questionsAsked = 0;
 let totalQuestions = 10;
 
+let config = getConfig();
+
 // QUERY API
 async function loadQuestion() {
-    const APIUrl = 'https://opentdb.com/api.php?amount=1';
+    const APIUrl = `https://opentdb.com/api.php?amount=1&category=${config.category}&difficulty=${config.difficulty}&type=${config.type}`;
+    console.log(APIUrl);
     const result = await fetch(`${APIUrl}`);
     const data = await result.json();
     resultElement.innerHTML = '';
@@ -42,7 +45,9 @@ function displayQuestion(data) {
     let optionsList = incorrectAnswer;
     optionsList.splice(Math.floor(Math.random() * (incorrectAnswer.length + 1)), 0, correctAnswer);
 
-    questionElement.innerHTML = `${data.question} <br> <span class = "category"> ${data.category} </span>`;
+    questionElement.innerHTML = `<strong>Question ${questionsAsked + 1}</strong><br> ${
+        data.question
+    } <br> <span class = "category"> Category: ${data.category} </span>`;
     optionsElement.innerHTML = `
         ${optionsList
             .map(
@@ -123,37 +128,6 @@ function restartQuiz() {
     checkAnswerElement.disabled = false;
     setCount();
     loadQuestion();
-}
-
-////////////////////////////////////////////////////////////
-
-// UTILITY FUNCTIONS
-// SET A COOKIE VALUE
-function setCookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-    let expires = 'expires=' + d.toUTCString();
-    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
-}
-
-// USER CHECK - checks if username cookie exists, asks for one if it doesn't
-function userCheck(name) {
-    let val = getCookie(name);
-    if (val != '') {
-        alert('Welcome again ' + user);
-    } else {
-        user = prompt('Please enter your name:', '');
-        if (user != '' && user != null) {
-            setCookie('username', user, 365);
-        }
-    }
-}
-
-// SET CONFIG - Sets session variables for config choices
-function setConfig(category, difficulty, type) {
-    sessionStorage.setItem('category', category);
-    sessionStorage.setItem('difficulty', difficulty);
-    sessionStorage.setItem('type', type);
 }
 
 // GET CONFIG - Returns an object of config choices
