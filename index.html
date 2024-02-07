@@ -22,29 +22,69 @@
 </head>
 
 <body>
-    <header>
-        <h1>Quizzee Rascals Presents...</h1>
-    </header>
     <main class="flex">
         <section>
             <div class="wrapper">
                 <div class="quiz-container">
                     <div class="quiz-head">
-                        <h1 class="quiz-title">Quiz Game</h1>
-                        <div class="quiz-score flex">
-                            <span id="correct-score"></span>/<span id="total-question"></span>
+                        <h1 class="quiz-title">Options</h1>
+                    </div>
+                    <div>
+                        <p>Please Select Your Options</p>
+                        <br>
+                        <div>
+                            <label for="trivia_category">Category: </label>
+                            <select id="trivia_category" name="trivia_category" class="form-control">
+                                <option value="any">Any Category</option>
+                                <option value="9">General Knowledge</option>
+                                <option value="10">Entertainment: Books</option>
+                                <option value="11">Entertainment: Film</option>
+                                <option value="12">Entertainment: Music</option>
+                                <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                                <option value="14">Entertainment: Television</option>
+                                <option value="15">Entertainment: Video Games</option>
+                                <option value="16">Entertainment: Board Games</option>
+                                <option value="17">Science &amp; Nature</option>
+                                <option value="18">Science: Computers</option>
+                                <option value="19">Science: Mathematics</option>
+                                <option value="20">Mythology</option>
+                                <option value="21">Sports</option>
+                                <option value="22">Geography</option>
+                                <option value="23">History</option>
+                                <option value="24">Politics</option>
+                                <option value="25">Art</option>
+                                <option value="26">Celebrities</option>
+                                <option value="27">Animals</option>
+                                <option value="28">Vehicles</option>
+                                <option value="29">Entertainment: Comics</option>
+                                <option value="30">Science: Gadgets</option>
+                                <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+                                <option value="32">Entertainment: Cartoon &amp; Animations</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div>
+                            <label for="trivia_difficulty">Difficulty: </label>
+                            <select id="trivia_difficulty" name="trivia_difficulty" class="form-control">
+                                <option value="any">Any Difficulty</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div>
+                            <label for="trivia_type">Type: </label>
+                            <select id="trivia_type" name="trivia_type" class="form-control">
+                                <option value="any">Any Type</option>
+                                <option value="multiple">Multiple Choice</option>
+                                <option value="boolean">True / False</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="quiz-body">
-                        <h2 class="quiz-question" id="question">????</h2>
-                        <ul class="quiz-options">
-                        </ul>
-                        <div id="result">
-                        </div>
-                    </div>
+                    <br>
                     <div class="quiz-foot">
-                        <button type="button" id="check-answer">Check Answer</button>
-                        <button type="button" id="play-again">Play Again!</button>
+                        <a href="quiz.html">Play Game</a>
                     </div>
                 </div>
             </div>
