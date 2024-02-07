@@ -10,13 +10,22 @@ const totalQuestionsElement = document.getElementById('total-question');
 let correctAnswer = '';
 let correctScore = 0;
 let questionsAsked = 0;
-let totalQuestions = 10;
-
+let totalQuestions = sessionStorage.getItem('questionCount');
+console.log(totalQuestions);
 let config = getConfig();
+
+// Build API URL
+let category = '';
+let difficulty = '';
+let type = '';
+
+category = config.category === 'any' ? (category = '') : (category = `&category=${config.category}`);
+difficulty = config.difficulty === 'any' ? (difficulty = '') : (difficulty = `&difficulty=${config.difficulty}`);
+type = config.type === 'any' ? (type = '') : (type = `&type=${config.type}`);
 
 // QUERY API
 async function loadQuestion() {
-    const APIUrl = `https://opentdb.com/api.php?amount=1&category=${config.category}&difficulty=${config.difficulty}&type=${config.type}`;
+    const APIUrl = `https://opentdb.com/api.php?amount=1${category}${difficulty}${type}`;
     console.log(APIUrl);
     const result = await fetch(`${APIUrl}`);
     const data = await result.json();
@@ -45,7 +54,7 @@ function displayQuestion(data) {
     let optionsList = incorrectAnswer;
     optionsList.splice(Math.floor(Math.random() * (incorrectAnswer.length + 1)), 0, correctAnswer);
 
-    questionElement.innerHTML = `<strong>Question ${questionsAsked + 1}</strong><br> ${
+    questionElement.innerHTML = `<strong>Question ${questionsAsked + 1} of ${totalQuestions}</strong><br> ${
         data.question
     } <br> <span class = "category"> Category: ${data.category} </span>`;
     optionsElement.innerHTML = `
@@ -106,13 +115,17 @@ function checkCount() {
             console.log('');
         }, 5000);
 
-        resultElement.innerHTML += `<p>Your score is ${correctScore}.</p>`;
+        resultElement.innerHTML += `
+        <div class="game-over">
+        <h2>Game Over</h2>
+        <p>Your score is ${correctScore} out of ${totalQuestions}.</p>
+        </div>`;
         playAgainButtonElement.style.display = 'block';
         checkAnswerElement.style.display = 'none';
     } else {
         setTimeout(function () {
             loadQuestion();
-        }, 2000);
+        }, 3000);
     }
 }
 
@@ -122,12 +135,13 @@ function setCount() {
 }
 
 function restartQuiz() {
-    correctScore = questionsAsked = 0;
-    playAgainButtonElement.style.display = 'none';
-    checkAnswerElement.style.display = 'block';
-    checkAnswerElement.disabled = false;
-    setCount();
-    loadQuestion();
+    // correctScore = questionsAsked = 0;
+    // playAgainButtonElement.style.display = 'none';
+    // checkAnswerElement.style.display = 'block';
+    // checkAnswerElement.disabled = false;
+    // setCount();
+    // loadQuestion();
+    window.location.href = 'index.html';
 }
 
 // GET CONFIG - Returns an object of config choices

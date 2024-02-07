@@ -43,9 +43,20 @@
                     <div>
                         <br>
                         <div>
+                            <label for="question-count">How Many Questions: </label>
+                            <select id="question-count" name="question-count" class="form-control">
+                                <option value="5" selected>5 Questions</option>
+                                <option value="10">10 Questions</option>
+                                <option value="15">15 Questions</option>
+                                <option value="20">20 Questions</option>
+                            </select>
+                            <br>
+                        </div>
+
+                        <div>
                             <label for="trivia_category">Category: </label>
                             <select id="trivia_category" name="trivia_category" class="form-control">
-                                <option value="any">Any Category</option>
+                                <option value="any" selected>Any Category</option>
                                 <option value="9">General Knowledge</option>
                                 <option value="10">Entertainment: Books</option>
                                 <option value="11">Entertainment: Film</option>
@@ -76,7 +87,7 @@
                         <div>
                             <label for="trivia_difficulty">Difficulty: </label>
                             <select id="trivia_difficulty" name="trivia_difficulty" class="form-control">
-                                <option value="any">Any Difficulty</option>
+                                <option value="any" selected>Any Difficulty</option>
                                 <option value="easy">Easy</option>
                                 <option value="medium">Medium</option>
                                 <option value="hard">Hard</option>
@@ -86,7 +97,7 @@
                         <div>
                             <label for="trivia_type">Type: </label>
                             <select id="trivia_type" name="trivia_type" class="form-control">
-                                <option value="any">Any Type</option>
+                                <option value="any" selected>Any Type</option>
                                 <option value="multiple">Multiple Choice</option>
                                 <option value="boolean">True / False</option>
                             </select>
