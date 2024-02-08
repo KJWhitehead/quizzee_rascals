@@ -1,110 +1,370 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>QUIZZEE RASCALS WEBSITE README.MD</h1>
 
-Welcome Mark Briscoe,
+<h2>Introduction</h2>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The Quizzee Rascals quiz is a site designed to allow users to test their general and subject-specific knowledge. It will encourage replayability and ensure a broad target audience, by offering the user the chance to vary difficulty, quiz length, and subject matter. It will also provide the option to share our quiz with friends and family.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+Landing/Home page: A full cover high quality background  of one of our artist’s finest portraits, with a brief sentence overlaid, describing the services offered by our website. Pen feature takes user to contact form with placeholder text encouraging them to take out a commission.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<img src="assets/images/readme/homegood.png" alt="Home page images across different devices">
 
-`python3 -m http.server`
+Gallery page: Will display our artist’s pet portrait portfolio in high quality images. This will assure the user the artist can provide high quality, uniquely stylised, portraits of their own pets. 
 
-A blue button should appear to click: _Make Public_,
+<img src="assets/images/readme/gallerygood.png" alt="Gallery page images across different devices">
 
-Another blue button should appear to click: _Open Browser_.
+About the Artist page: Will give a brief bio of the artist. Pen feature takes user to contact form with placeholder text encouraging them to take out a commission.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<img src="assets/images/readme/aboutgood.png" alt="About page images across different devices">
 
-A blue button should appear to click: _Make Public_,
+Contact page: Will allow users to contact our artist directly using a responsive contact form, requesting phone number, email address, and a responsive message text box, which will allow the user to move easily towards commissioning their own pet portrait. The form will be unable to be submitted until all sections of the form are completed, including the email address in the correct format. There will be placeholder text that will allow the user to know our artist is available for commissions, or to answer any questions, and encouraging the user to get in touch.
 
-Another blue button should appear to click: _Open Browser_.
+<img src="assets/images/readme/contactgood.png" alt="Contact page images across different devices">
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Header: Links to the other pages of the website will be fixed and identical across all pages to provide consistency and ease of navigation and prevent extra clicks being required to go home and then forward again. Extra bold added to page that user is currently on to improve navigability.
 
-To log into the Heroku toolbelt CLI:
+<img src="assets/images/readme/navbarhover.png" alt="Image of hover function on navbar circled">
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ Footer: Identical across all pages which will provide links to the artist’s social media accounts and their email and phone number to provide ease of access from the first page. It will also provide provide further evidence of the artist's work, and the ability to gather reviews from others and provide further engagement.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+<img src="assets/images/readme/footerlinks.png" alt="Arrowed icons on footer to social media and contact links">
 
-------
+Alternative Text: We have added alternative text to all images to ensure accessibility for visually impaired users
 
-## Release History
+<img src="assets/images/readme/accessibility.png" alt="Screenshot of code alt being added to images">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## UX
 
-**September 20 2023:** Update Python version to 3.9.17.
+<strong>Site Goals</strong>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The Quizzee Rascals quiz is a site designed to allow users to test their general and subject-specific knowledge. It will encourage replayability, with options to vary difficulty, quiz length, subject matter, and logging users personal high scores. It will also provide the option to share our quiz with friends and family.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<strong>Design Choices</strong>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+We selected a rich and colourful style, using bright high contrast colours. We want the user to feel immersed in the experience of visiting our website. We derived our colours from https://visme.co/blog/website-color-schemes/ No.2 “Bright Accent Colors"
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Wire Frames
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Home Page
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+<img src="assets/images/readme/home.png" alt="Wireframe image of Home page">
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Gallery Page
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<img src="assets/images/readme/gallerywire.png" alt="Wireframe image of Gallery page">
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+About Page
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<img src="assets/images/readme/about.png" alt="Wireframe image of About page">
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Contact Page
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<img src="assets/images/readme/contact.png" alt="Wireframe image of Contact page">
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+<br>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## User Stories
 
-------
+### MUST HAVES
 
-## FAQ about the uptime script
+<table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues</th>
+  </tr>
+  <tr>
+    <td>As a user, I want the questions and answers to be clear and unambiguous</td>
+    <td>Questions clearly phrased</td>
+    <td>Occasional spelling errors e.g. "Introduced" spelt 'introudced'.</td>
+   
+    
+  </tr>
+  <tr>
 
-**Why have you added this script?**
+   <tr>
+    <td>As a site owner, I want the logo clearly visible to increase brand recognition</td>
+    <td>Logo clearly visible on landing page</td>
+    <td>xxx</td>
+  <tr>
+    <td>As a user, I want it to be obvious how to proceed with the game.</td>
+    <td>Questions, and answer list clear, with feedback when answers clicked.</td>
+    <td>xxx</td>
+   
+  </tr>
+  <tr>
+    <td>As a user, I want to be able to restart the game once I’ve finished.</td>
+    <td>Play again button when quiz complete</td>
+    <td>xxx</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want to be able to reset the game when I’ve made an error.</td>
+    <td>Reset/ restart quiz button</td>
+    <td>xxx</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want the site to be easily navigable.</td>
+    <td>Different features of site are clearly identifiable</td>
+    <td>xxx</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want to be able to choose an answer from a pre-populated list.</td>
+    <td>List of answers to be selected</td>
+    <td>xxx</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want to receive feedback on the answers.</td>
+    <td>Clear signal of correct / incorrect answer</td>
+    <td>xxx</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want the site to be visually appealing.</td>
+    <td> Select complementary colour scheme. <br>
+    Different elements/features delineated.</td>
+    <td>xxx</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want to be able to start the quiz.</td>
+    <td>Page loads and includes necessary event listeners</td>
+    <td>xxx</td>
+    
+  </tr>
+   <tr>
+    <td>As a site owner, I want to use an API so that I can source questions from an outside repository.</td>
+    <td>Questions load clearly in each different category and difficulty</td>
+    <td>xxx</td>
+    
+  </tr>
+  </table>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Should haves   
 
-**How will this affect me?**
+  <table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues</th>
+  </tr>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  <tr>
+    <td>As a user, I want to sort the questions by categories so I can test myself on specific topics.</td>
+    <td>Drop-down menu specifying topic category</td>
+    <td>xxx</td>
+    
+  </tr>
+      <td>As a user I want to challenge myself against different degrees of difficulty depending on my level of knowledge</td>
+    <td>Drop-down menu specifying difficulty level</td>
+    <td>xxx</td>
+    
+  </tr>
+  <tr>
+  </table>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Could Haves
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  <table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues</th>
+  </tr>
+<tr>
+    <td>As a user, I want to be greeted by name by the program for personalisation and to feel welcome.</td>
+    <td>Input Name field and have name saved when user returns (cookies required)</td>
+    <td>xxx</td>
+  </tr>
+   <tr>
+    <td>As a user I want to see my score</td>
+    <td>High score ribbon/button to keep score updating</td>
+    <td>xxx</td>
+  </tr>
+  <tr>
+    <td>As a user I want to be able to store my highest score to see if I can beat it on my future visits.</td>
+    <td>Highest score from previous use visible (cookies required)</td>
+    <td>xxx</td>
+  </tr>
+  <tr>
+    <td>As a user I want to be able to share the fun I am having doing the quiz, and challenge my friends.</td>
+    <td>"Share with friends" copy link button. Post to FB / Instagram / X clickable icons.</td>
+    <td>xxx</td>
+  </tr>
+     <td>As a site owner I want to increase the visibility and thus usership of our website.</td>
+    <td>"Share with friends" copy link button. Post to FB / Instagram / X clickable icons.</td>
+    <td>xxx</td>
+  </tr>
+  <tr>
+     <td>As a user, I want to be able to adjust the number of questions I am asked to try shorter or longer games.</td>
+    <td>Dropdown menu providing game length options</td>
+    <td>xxx</td>
+  </tr>
+  </table>
 
-**So….?**
+### Won't haves
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+  <table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues</th>
+  </tr>
+    <td>As a user, I want to have a countdown timer to challenge myself to answer more quickly.</td>
+    <td>A countdown timer to display either how long I have left to answer the question before it assigns to wrong</td>
+    <td>N/A</td>
+  </tr>
+    <td>As a user in the age of online socialising, I want to be able to play the same quiz against friends and family or other users</td>
+    <td>A code to be provided to users to login to the same quiz iteration, and personal user scores that increase with correct answers</td>
+    <td>N/A</td>
+  </tr>
+  </table>
 
-**Can I opt out?**
+<!--
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Testing 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+<table>
+    <thead>
+        <th>Feature</th>
+        <th>Expect</th>
+        <
+        <th>Result</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Navbar links</td>
+            <td>1.Take you to the relevant webpage 2.Show which page you are on</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Social media links</td>
+            <td>Take you to that particular website when icon is clicked</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Logo acts as home page link</td>
+            <td>Logo when clicked takes you to home page</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>All pages responsive</td>
+            <td>Pages respond differently depending on resolution of device to reduce feature cluttering, and display essential features.</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Pen icon on home and about page takes you to get in touch form</td>
+            <td>Pen icon on page takes user to get in touch form</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+                <tr>
+            <td>About page exhibits image of and bio of artist</td>
+            <td>About page exhibits image of and bio of artist</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Gallery page exhibits art</td>
+            <td>All images visible in equal proportion</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Contact form</td>
+            <td>1. Sends message 2.Gives feedback send is successful in seperate window</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Gallery images have alt text for screenreader</td>
+            <td>When image is removed a short text message is displayed</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+                <tr>
+            <td>Contact form requires correct formatting</td>
+            <td>Contact form must be completed in correct format for message to be sent</td>
+            <td>Success</td>
+            <td></td>
+        </tr>
+        <tr>
 
-**Anything more?**
+        
+ 
+   
+        
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+        
 
----
+</table>
 
-Happy coding!
+-->
+
+## Features Left to Implement
+
+We considered adding a price structure but assigned it a "wont have" on our kanban board, as it would be difficult to implement in the time available given the need for payment processing options etc, and potentially seen as gauche and detract from the value of the artist's work, having reviewed other artist's websites e.g.https://www.rayhart.com/rayhart
+
+Considered a reviews section but defined it as a "won't have" given the time available. We felt that also it may appear somewhat gauche on an artistic website, and there were links to social media should provide access to reviews if desired by the user.
+
+Phone number and email address not interactive which would be nice but ran out of time
+
+Hover feature on social media links
+
+### Validator Testing 
+
+For HTML validation https://validator.w3.org/
+
+<img src="assets/images/readme/html-validation.png" alt="html validation screenshot">
+
+For CSS validation  https://jigsaw.w3.org/css-validator/
+
+<img src="assets/images/readme/css-validation.png" alt="css validation screenshot">
+  
+
+### Unfixed Bugs / Issues
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+## Deployment
+
+Site successfully deployed on xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+## Credits 
+
+Color Scheme: “Bright Accent Colors” https://visme.co/blog/website-color-schemes/
+
+### Content 
+
+Favicons from FontAwesome https://fontawesome.com/icons/circle-question?f=classic&s=solid
+
+Logo from Canva https://www.canva.com/
+
+For help with hyperlinking email and phone numbers https://www.tutorialspoint.com/html/html_email_links.htm
+
+Social Media links taken from fontawesome https://fontawesome.com/icons/categories/social
+
+For validation in HTML https://validator.w3.org/
+
+For validation in CSS https://jigsaw.w3.org/css-validator/
+
+For ReadME table https://www.shecodes.io/athena/2362-creating-a-table-with-4-columns-and-4-rows-in-html
+
+Wireframes produced using Balsamiq WireFrames https://balsamiq.com/wireframes/?gad_source=1&gclid=CjwKCAiA44OtBhAOEiwAj4gpOexFh0z3peWS6wolbjlJt_fLq7cZGNu99YeMSIpU89wlL2p6ZluXiRoCOSUQAvD_BwE
+
+### Media
+
+Art and images produced by https://www.bing.com/images/create/
+
+## Other General Project Advice
+
+Enjoy the Quiz!
+
