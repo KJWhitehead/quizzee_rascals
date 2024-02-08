@@ -83,12 +83,14 @@ body {
 .quiz-question .category {
     font-size: 0.9rem;
     font-weight: 500;
-    background-color: var(--main-color);
-    color: var(--light-color);
-    padding: 0.2rem 0.4rem;
+    background-color: white;
+    color: black;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid grey;
     border-radius: 0.2rem;
     margin-top: 0.5rem;
     display: inline-block;
+    box-shadow: 0 4px 0 0 #bbbbbb;
 }
 
 .quiz-options {
@@ -128,8 +130,9 @@ body {
 .selected {
     background-color: var(--hover-color) !important;
     color: var(--dark-color) !important;
+    /* border: 1px solid black; */
     border-color: var(--hover-color) !important;
-    box-shadow: 0 4px 0 0 #bbbbbb !important;
+    box-shadow: 4px 4px 0 0 #f6ff00 !important;
 }
 
 .quiz-foot {
@@ -195,14 +198,6 @@ body {
     border-radius: 2rem;
 }
 
-.modal-header,
-h4,
-.close {
-    background-color: #242582;
-    color: white !important;
-    text-align: center;
-    font-size: 30px;
-}
 
 /* MEDIA QUERIES /////////////////////////////////////////////////////////////////////// */
 
@@ -235,6 +230,11 @@ h4,
         font-size: 0.75rem;
     }
 
+    .quiz-options li {
+        padding: 0.3rem 1.2rem;
+        font-size: 0.75rem;
+    }
+
 }
 
 /* for mobile view */
@@ -262,6 +262,10 @@ h4,
 
     .quiz-question .category {
         font-size: 1.0rem;
+    }
+
+    .quiz-options li {
+        padding: 0.7rem 1.2rem;
     }
 
 }
@@ -293,6 +297,10 @@ h4,
         font-size: 1.1rem;
     }
 
+    .quiz-options li {
+        padding: 0.7rem 1.2rem;
+    }
+
 }
 
 /* for tablet view */
@@ -322,6 +330,10 @@ h4,
         font-size: 1.55rem;
     }
 
+    .quiz-options li {
+        padding: 0.7rem 1.2rem;
+    }
+
 }
 
 /* for laptop view */
@@ -345,7 +357,12 @@ h4,
     }
 
     .quiz-question .category {
+        margin-top: 2rem;
         font-size: 1.8rem;
+    }
+
+    .quiz-options li {
+        padding: 1.5rem 1.2rem;
     }
 }
 
@@ -363,6 +380,19 @@ h4,
 
     .quiz-foot button {
         font-size: 1.5rem;
+    }
+
+    .quiz-question {
+        font-size: 2rem;
+    }
+
+    .quiz-question .category {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .quiz-options li {
+        padding: 1.5rem 1.2rem;
     }
 }
 
