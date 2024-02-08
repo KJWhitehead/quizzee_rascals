@@ -7,6 +7,8 @@ const resultElement = document.getElementById('result');
 const correctScoreElement = document.getElementById('correct-score');
 const totalQuestionsElement = document.getElementById('total-question');
 const restartButtonElement = document.getElementById('restart-button');
+const quizBodyElement = document.getElementById('quiz-body');
+const quizOptionsElement = document.getElementById('quiz-options');
 
 let correctAnswer = '';
 let correctScore = 0;
@@ -122,6 +124,7 @@ function checkCount() {
         playAgainButtonElement.style.display = 'block';
         checkAnswerElement.style.display = 'none';
         restartButtonElement.style.display = 'none';
+        quizOptionsElement.style.display = 'none';
         console.log(restartButtonElement.style.display);
     } else {
         setTimeout(function () {
@@ -136,12 +139,6 @@ function setCount() {
 }
 
 function restartQuiz() {
-    // correctScore = questionsAsked = 0;
-    // playAgainButtonElement.style.display = 'none';
-    // checkAnswerElement.style.display = 'block';
-    // checkAnswerElement.disabled = false;
-    // setCount();
-    // loadQuestion();
     window.location.href = 'index.html';
 }
 
