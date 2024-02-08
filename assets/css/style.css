@@ -185,7 +185,16 @@ body {
     border-radius: 2rem;
 }
 
-/* MEDIA QUERIES */
+.modal-header,
+h4,
+.close {
+    background-color: #242582;
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* MEDIA QUERIES /////////////////////////////////////////////////////////////////////// */
 
 /* Extra small devices (phones, max-width 600px and down) */
 @media only screen and (max-width: 568px) {

@@ -2,6 +2,7 @@ const questionCount = document.getElementById('question-count');
 const triviaCategory = document.getElementById('trivia_category');
 const triviaDifficulty = document.getElementById('trivia_difficulty');
 const triviaType = document.getElementById('trivia_type');
+const titleElement = document.getElementById('title');
 
 const playButtonElement = document.getElementById('playButton');
 
@@ -44,7 +45,8 @@ function getCookie(cname) {
 function userCheck(name) {
     let val = getCookie(name);
     if (val != '') {
-        alert('Welcome again ' + val);
+        titleElement.innerText = 'Welcome again ' + val;
+        // alert('Welcome again ' + val);
     } else {
         user = prompt('Please enter your name:', '');
         if (user != '' && user != null) {
