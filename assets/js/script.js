@@ -63,7 +63,7 @@ function displayQuestion(data) {
         ${optionsList
             .map(
                 (option, index) => `
-            <li> ${index + 1}. <span>${option}</span> </li>
+            <li><span>${option}</span> </li>
         `
             )
             .join('')}
