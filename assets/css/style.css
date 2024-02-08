@@ -122,6 +122,10 @@ body {
     box-shadow: 0 4px 0 0 #bbbbbb !important;
 }
 
+.quiz-foot {
+    text-align: center;
+}
+
 .quiz-foot button {
     border: none;
     border-radius: 0.5rem;
@@ -133,7 +137,7 @@ body {
     margin: 0 auto 0 auto;
     text-transform: uppercase;
     cursor: pointer;
-    display: block;
+    /* display: block; */
     background-color: var(--grey-color);
     color: var(--dark-color);
     letter-spacing: 2px;
@@ -173,6 +177,8 @@ body {
 }
 
 .game-over {
+    width: 80%;
+    margin: auto;
     margin-top: 2rem;
     padding: 1rem;
     border: 2px solid red;

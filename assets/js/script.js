@@ -6,12 +6,12 @@ const playAgainButtonElement = document.getElementById('play-again');
 const resultElement = document.getElementById('result');
 const correctScoreElement = document.getElementById('correct-score');
 const totalQuestionsElement = document.getElementById('total-question');
+const restartButtonElement = document.getElementById('restart-button');
 
 let correctAnswer = '';
 let correctScore = 0;
 let questionsAsked = 0;
 let totalQuestions = sessionStorage.getItem('questionCount');
-console.log(totalQuestions);
 let config = getConfig();
 
 // Build API URL
@@ -26,7 +26,6 @@ type = config.type === 'any' ? (type = '') : (type = `&type=${config.type}`);
 // QUERY API
 async function loadQuestion() {
     const APIUrl = `https://opentdb.com/api.php?amount=1${category}${difficulty}${type}`;
-    console.log(APIUrl);
     const result = await fetch(`${APIUrl}`);
     const data = await result.json();
     resultElement.innerHTML = '';
@@ -37,6 +36,7 @@ async function loadQuestion() {
 function eventListeners() {
     checkAnswerElement.addEventListener('click', checkAnswer);
     playAgainButtonElement.addEventListener('click', restartQuiz);
+    restartButtonElement.addEventListener('click', restartQuiz);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -88,7 +88,6 @@ function checkAnswer() {
     if (optionsElement.querySelector('.selected')) {
         let selectedAnswer = optionsElement.querySelector('.selected span').textContent;
         if (selectedAnswer == HTMLDecode(correctAnswer)) {
-            console.log(correctAnswer);
             correctScore++;
             resultElement.innerHTML = `<p><i class = "fas fa-check"></i>Correct Answer!</p>`;
         } else {
@@ -112,7 +111,7 @@ function checkCount() {
     setCount();
     if (questionsAsked == totalQuestions) {
         setTimeout(function () {
-            console.log('');
+            // console.log('');
         }, 5000);
 
         resultElement.innerHTML += `
@@ -125,7 +124,7 @@ function checkCount() {
     } else {
         setTimeout(function () {
             loadQuestion();
-        }, 3000);
+        }, 4000);
     }
 }
 
