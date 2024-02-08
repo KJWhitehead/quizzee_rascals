@@ -59,15 +59,7 @@ function displayQuestion(data) {
     questionElement.innerHTML = `<strong>Question ${questionsAsked + 1} of ${totalQuestions}</strong><br> ${
         data.question
     } <br> <span class = "category"> Category: ${data.category} </span>`;
-    optionsElement.innerHTML = `
-        ${optionsList
-            .map(
-                (option, index) => `
-            <li><span>${option}</span> </li>
-        `
-            )
-            .join('')}
-    `;
+    optionsElement.innerHTML = `${optionsList.map((option, index) => `<li><span>${option}</span> </li>`).join('')}`;
     selectOption();
 }
 
