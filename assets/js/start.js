@@ -45,7 +45,7 @@ function getCookie(cname) {
 function userCheck(name) {
     let val = getCookie(name);
     if (val != '') {
-        titleElement.innerText = 'Welcome again ' + val;
+        titleElement.innerText = 'Welcome again, ' + val;
         // alert('Welcome again ' + val);
     } else {
         user = prompt('Please enter your name:', '');
