@@ -64,7 +64,7 @@ body {
     text-align: right;
     font-weight: 600;
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     /* border: 5px solid var(--grey-color); */
     font-weight: bold;
     width: 100px;
@@ -264,8 +264,16 @@ body {
     }
 
     .quiz-options li {
-        padding: 0.3rem 1.2rem;
+        padding: 0.2rem 1rem;
         font-size: 0.75rem;
+    }
+
+    #result {
+        font-size: 0.75rem;
+    }
+
+    #fb-share {
+        margin-top: 1rem;
     }
 
 }
