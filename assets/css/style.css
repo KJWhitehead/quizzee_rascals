@@ -29,8 +29,8 @@ html {
 .flex {
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: safe center;
+    justify-content: safe center;
 }
 
 body {
@@ -46,10 +46,19 @@ body {
     background: var(--light-color);
     padding: 1.5rem 4rem 3rem 4rem;
     width: 60%;
-    min-height: 90lvh;
+    /* min-height: 90lvh; */
     border-radius: 1.5rem;
     position: relative;
     box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
+    ;
+}
+
+.wrapper::before {
+    height: 10%;
+}
+
+.wrapper::after {
+    height: 10%;
 }
 
 .quiz-title {
