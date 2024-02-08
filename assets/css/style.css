@@ -12,7 +12,7 @@ html {
     --main-color: #242582;
     --light-color: #fff;
     --dark-color: #000;
-    --grey-color: #e2dede;
+    --grey-color: #99738e;
     --bg-color: linear-gradient(180deg, #242582 0%, rgba(9, 9, 121, 1) 35%, #f64c72 100%);
     --hover-color: #f64c72;
     --transition: all 300ms ease-in-out;
@@ -159,7 +159,7 @@ body {
 }
 
 .quiz-foot button:hover {
-    background-color: #e6e6e6;
+    background-color: var(--grey-color);
     box-shadow: 0 4px 0 0 #a7a7a7;
 }
 
