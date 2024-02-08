@@ -44,7 +44,7 @@ body {
     background: var(--light-color);
     padding: 1.5rem 4rem 3rem 4rem;
     width: 60%;
-    height: 90vh;
+    /* height: 90vh; */
     border-radius: 1.5rem;
     position: relative;
     box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
@@ -242,7 +242,7 @@ body {
     }
 
     .quiz-title {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .quiz-subtitle {
@@ -394,16 +394,16 @@ body {
     }
 
     .quiz-question {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .quiz-question .category {
         margin-top: 2rem;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .quiz-options li {
-        padding: 1.5rem 1.2rem;
+        padding: 0.5rem 1.2rem;
     }
 }
 
@@ -416,7 +416,7 @@ body {
     }
 
     .quiz-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .quiz-foot button {
@@ -424,7 +424,7 @@ body {
     }
 
     .quiz-question {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .quiz-question .category {
@@ -433,26 +433,9 @@ body {
     }
 
     .quiz-options li {
-        padding: 1.5rem 1.2rem;
+        padding: 1rem 1.2rem;
     }
 }
 
-
-/* Extra small devices (phones, max-width 568px and down) */
-@media only screen and (max-width: 568px) {}
-
-/* Small devices (portrait tablets and large phones, min-width 568px and up) */
-@media only screen and (min-width: 569px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+/* wide screen */
+@media only screen and (min-width: 2000px) {}
