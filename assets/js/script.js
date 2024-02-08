@@ -121,6 +121,8 @@ function checkCount() {
         </div>`;
         playAgainButtonElement.style.display = 'block';
         checkAnswerElement.style.display = 'none';
+        restartButtonElement.style.display = 'none';
+        console.log(restartButtonElement.style.display);
     } else {
         setTimeout(function () {
             loadQuestion();
