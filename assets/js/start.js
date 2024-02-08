@@ -2,6 +2,7 @@ const questionCount = document.getElementById('question-count');
 const triviaCategory = document.getElementById('trivia_category');
 const triviaDifficulty = document.getElementById('trivia_difficulty');
 const triviaType = document.getElementById('trivia_type');
+const titleElement = document.getElementById('title');
 
 const playButtonElement = document.getElementById('playButton');
 
@@ -44,7 +45,8 @@ function getCookie(cname) {
 function userCheck(name) {
     let val = getCookie(name);
     if (val != '') {
-        alert('Welcome again ' + val);
+        titleElement.innerText = 'Welcome again ' + val;
+        // alert('Welcome again ' + val);
     } else {
         user = prompt('Please enter your name:', '');
         if (user != '' && user != null) {
@@ -60,3 +62,14 @@ function setConfig(questionCount, category, difficulty, type) {
     sessionStorage.setItem('difficulty', difficulty);
     sessionStorage.setItem('type', type);
 }
+
+var fbButton = document.getElementById('fb-share-button');
+var url = window.location.href;
+
+fbButton.addEventListener('click', function () {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + url,
+        'facebook-share-dialog',
+        'width=800,height=600'
+    );
+    return false;
+});
