@@ -94,7 +94,7 @@ We selected the font style Poppins 'https://fonts.googleapis.com/css2?family=Pop
 
 
 
-<img src="assets/images/readMeImages/wireframes/wflandingpagefinal.png" alt="Wireframe image of Insert name and Options page">
+<img src="assets/images/readMeImages/wireframes/wflandingpagefinal2.png" alt="Wireframe image of Insert name and Options page">
 
 ## Quiz page
 
