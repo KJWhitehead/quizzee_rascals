@@ -395,7 +395,7 @@ body {
     }
 
     .quiz-question {
-        font-size: 1.75rem;
+        font-size: 1.4rem;
     }
 
     .quiz-question .category {
@@ -465,12 +465,12 @@ body {
     }
 
     .quiz-question {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .quiz-question .category {
         margin-top: 2rem;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .quiz-options li {
