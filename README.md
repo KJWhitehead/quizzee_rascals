@@ -318,7 +318,7 @@ We ensured that we provided wireframes to cover all the different stages of user
       <td>Only a share to FB button, no instagram or X buttons</td>
       <br>
     <td><img src="assets/images/readMeImages/bugs/socialmedia.png" alt="Social media button of Facebook, but not any other social media"></td>
-    <td><br><br<br>Ran out of time to add this sprint, but definitely would be added to a on a future sprint<br><br></td>
+    <td><br><br<br>Ran out of time to add this sprint, but definitely would be added Instagram and X buttons on a future sprint<br><br></td>
   </tr>
   <tr>
       <td>Spelling errors on website </td>
