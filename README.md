@@ -1,8 +1,8 @@
-<h1>Quiz-E by Quizzie Rascals README.MD</h1>
+<h1>Quiz-E by Quizzee Rascals README.MD</h1>
 
 <h2>Introduction</h2>
 
-Quiz-E by Quizzie Rascals is an online quiz designed to allow users to test their general and subject-specific knowledge. It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.
+Quiz-E by Quizzee Rascals is an online quiz designed to allow users to test their general and subject-specific knowledge. It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.
 
 ## Landing page for first time users
 
@@ -20,7 +20,7 @@ The Options page allows users to provide their name so that they are greeted by 
 
 There are drop menus to adjust difficulty, category, how many questions, and question type. There is also a social media button to easily share Quiz-E. 
 
-It displays the Quizzie Rascals brand logo clearly for brand recognition. It also provides the option to share Quiz-E with friends and family on social media.
+It displays the Quizzee Rascals brand logo clearly for brand recognition. It also provides the option to share Quiz-E with friends and family on social media.
 
 <strong>Options page across multiple devices</strong>
 
