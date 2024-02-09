@@ -139,7 +139,7 @@ We ensured that we provided wireframes to cover all the different stages of user
     <td>As a user, I want the site to be visually appealing.</td>
     <td> Select complementary colour scheme. <br>
     Different elements/features delineated.</td>
-    <td>xxx</td>
+    <td>None detected</td>
     
   </tr>
   <tr>
