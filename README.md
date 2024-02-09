@@ -1,8 +1,8 @@
-<h1>Quizzee by Quizzie Rascals README.MD</h1>
+<h1>Quiz-E by Quizzie Rascals README.MD</h1>
 
 <h2>Introduction</h2>
 
-Quiz-E by Quizzie Rascals is an online quiz designed to allow users to test their general and subject-specific knowledge, across a range of personal devices. It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.
+Quiz-E by Quizzie Rascals is an online quiz designed to allow users to test their general and subject-specific knowledge. It encourages replayability and ensures a broad target audience (age 13+), by offering the user the chance to vary difficulty, quiz length, and subject matter. It also provides the option to share Quiz-E with friends and family on social media.
 
 ## Landing page for first time users
 
@@ -14,9 +14,9 @@ The landing page allows users to provide their name so that they are greeted by 
 
 The Options page allows users to provide their name so that they are greeted by name on return visits. 
 
-There are easily adjustable options for difficulty, category, and how many questions and question type. There is also a social media button to easily share Quiz-E. 
+There are drop menus to adjust difficulty, category, how many questions, and question type. There is also a social media button to easily share Quiz-E. 
 
-It displays the Quizzie Rascals brand logo clearly for easy brand recognition. It also provides the option to share Quiz-E with friends and family on social media.
+It displays the Quizzie Rascals brand logo clearly for brand recognition. It also provides the option to share Quiz-E with friends and family on social media.
 
 
 <img src="assets/images/readMeImages/landingpage.png" alt="Options page across different devices">
@@ -31,7 +31,12 @@ It displays the Quizzie Rascals brand logo clearly for easy brand recognition. I
 
  ## Quiz page
 
- The quiz page presents questions and possible answers, with buttons clearly delineated against their background. There is clear feedback when a user selects and then commits an answer. It lets you know the correct answer if you were wrong. There is also an updating score display. 
+ The quiz page presents questions and possible answers, with buttons clearly delineated against their background. 
+ 
+ There is clear feedback when a user selects and then commits an answer. 
+ 
+ It lets you know the correct answer if you were wrong. There is also an updating score display. 
+
  There is a restart button in case the user decides they want to start again. 
 
 
@@ -76,12 +81,12 @@ We ensured that we provided wireframes to cover all the different stages of user
   <tr>
     <th>User Story</th>
     <th>Features</th>
-    <th>Bugs / Issues - tested across all viewports of all devices using Google Dev Tools</th>
+    <th>Bugs / Issues - tested across viewports of all devices using Google Dev Tools</th>
   </tr>
    <tr>
-    <td>As a user, I want a flowing user experience, without any bugs or glitches interrupting it</td>
-    <td>No bugs in the site that that impede user interaction with site</td>
-    <td>3 second delay between selecting answer and next question</td>
+    <td>As a user, I want a flowing user experience, without any bugs or glitches </td>
+    <td>No bugs or issues that impede user interaction with site</td>
+    <td>Three second delay between selecting answer and next question</td>
    
     
   </tr>
@@ -89,20 +94,16 @@ We ensured that we provided wireframes to cover all the different stages of user
     <td>As a user, I want the questions and answers to be clear and unambiguous</td>
     <td>Questions clearly phrased. Text clearly delineated against background.</td>
     <td>Occasional spelling errors e.g. "Introduced" spelt 'introudced'.</td>
-   
-    
+  
   </tr>
-  <tr>
-
    <tr>
     <td>As a site owner, I want the logo clearly visible to increase brand recognition</td>
-    <td>Logo clearly visible on landing page.</td>
+    <td>Logo clearly visible on landing/options page.</td>
     <td>None detected</td>
   <tr>
     <td>As a user, I want it to be obvious how to proceed with the game.</td>
     <td>Questions, and answer list clear, with feedback when answers clicked.</td>
     <td>None detected</td>
-   
   </tr>
   <tr>
     <td>As a user, I want to be able to restart the game once I’ve finished.</td>
@@ -184,7 +185,7 @@ We ensured that we provided wireframes to cover all the different stages of user
     <tr>
      <td>As a user, I want to be able to adjust the number of questions I am asked to try shorter or longer games.</td>
     <td>Dropdown menu providing game length options</td>
-    <td>May be insufficient questions in some specific categories or types (i.e.true or false)</td>
+    <td>Sometimes quiz repeats questions, or includes them from higher difficulties.</td>
   </tr>
   </table>
 
@@ -250,15 +251,22 @@ We ensured that we provided wireframes to cover all the different stages of user
     <td><img src="assets/images/readMeImages/bugs/delay.png" alt="Quiz page showing selected option and timer displaying 2.5 seconds"></td>
     <td>The delay was a fix to a bug of the site crashing when too many requests were made from the API in too small a space of time. The only fix would have been to change the API from a paid provider but this would be costly and we would have had to change too much code by the time we realised</td>
       <tr>
-    </tr>
-    <>
-    
-  </
-    <td>Spelling errors on website <h1>IMAGE TO BE SENT TO PETER</h1></td>
+      <td>Only a share to FB button, no instagram or X buttons</td>
+    <td><img src="assets/images/readMeImages/bugs/socialmedia.png" alt="Social media button of Facebook, but not any other social media"></td>
+    <td>Simply ran out of time to add this sprint, but definitely would be added to a on a future sprint</td>
+  </tr>
+  <tr>
+      <td>Spelling errors on website <h1>IMAGE TO BE SENT TO PETER</h1></td>
     <td><img src="assets/images/readMeImages/bugs/delay.png" alt="Question with a spelling error on it"></td>
     <td>Unfortunately none available as source of questions is the API. The only fix would have been to change the API from a paid provider.</td>
-  </tr> 
+    
+    
+  <table>
+  
+  </tr>
+
   </table>
+
 
 ### Validator Testing 
 
