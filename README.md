@@ -70,6 +70,8 @@ It displays the Quizzie Rascals brand logo clearly for brand recognition. It als
 
 <img src="assets/images/readMeImages/quizpage/quizpage2.png" alt="Quiz being played">
 
+<strong>Quiz complete screen</strong>
+
 <img src="assets/images/readMeImages/quizpage/quizcomplete.png" alt="Quiz complete page">
 
 ## Design Choices
@@ -298,7 +300,7 @@ We ensured that we provided wireframes to cover all the different stages of user
   <td>On large devices the "Enter name" box obscures the brand logo and feels like a pop-up rather than an integrated element of the UX package</td>
     <td><img src="assets/images/readMeImages/amiresponsive/loginscreenpng.png" alt="Image showing box obscuring the logo on larger devices"></td>
     
-  <td>Unfortunately we ran out of time to fix this. We would in future sprints change from a in-browser alert box to a html modal box, that would be styled and centred on the screen etc as part of a user management system.</td>
+  <td>Unfortunately we ran out of time to fix this. We would in future sprints change from an in-browser alert box to a html modal box, that would be styled and centred on the screen etc as part of a user management system.</td>
   </tr>
       
   </tr>
